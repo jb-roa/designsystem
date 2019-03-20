@@ -27,7 +27,7 @@ ul {
     }
 
     &.section-header {
-      background-color: transparent;
+      background-color: var(--kirby-background);
       border: none;
       border-bottom: 1px solid var(--kirby-background);
 

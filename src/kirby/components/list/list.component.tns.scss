@@ -1,9 +1,16 @@
 @import "../../scss/native-imports";
-
 .row {
   padding: size('gutter') size('gutter-small') size('gutter') size('gutter-small');
   justify-content: space-between;
   flex-direction: row;
-  border-color: get-color('kirby-background');;
-  border-width: 0 0 1 0;
+
+  &.body {
+    border-color: get-color('kirby-background');
+    border-width: 0 0 1 0;
+    background-color: get-color('kirby-surface');
+  }
+
+  &.header {
+    background-color: get-color('kirby-background');
+  }
 }
