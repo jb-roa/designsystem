@@ -3,5 +3,5 @@
 .cell {
   padding: 0 size('gutter-small') 0 size('gutter-small');
   flex-direction: column;
-  background-color: var(--kirby-surface);
+  background-color: get-color('kirby-surface');
 }

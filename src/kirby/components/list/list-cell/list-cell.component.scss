@@ -1,9 +1,10 @@
 @import '../../../scss/web-imports';
 
 :host {
+  --background: var(--kirby-surface);
   flex-grow: 0;
   flex-shrink: 1;
   flex-direction: column;
   display: flex;
-  background-color: var(--kirby-surface);
+  background-color: var(--background);
 }
