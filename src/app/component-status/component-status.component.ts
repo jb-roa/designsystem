@@ -305,7 +305,8 @@ export class ComponentStatusComponent implements OnInit {
         Authorization: 'token ' + environment.oauth.githubToken1 + environment.oauth.githubToken2,
       }),
     };
-    const url = environment.githubApi + '/repos/kirbydesign/designsystem/issues?labels=component';
+    // tslint:disable-next-line:prettier
+    const url = environment.githubApi + '/repos/kirbydesign/designsystem/issues?per_page=100&labels=component';
     return this.http.get<any[]>(url, options);
   }
 
@@ -315,7 +316,8 @@ export class ComponentStatusComponent implements OnInit {
         Authorization: 'token ' + environment.oauth.githubToken1 + environment.oauth.githubToken2,
       }),
     };
-    const url = environment.githubApi + '/repos/kirbydesign/designsystem/issues?labels=enhancement';
+    // tslint:disable-next-line:prettier
+    const url = environment.githubApi + '/repos/kirbydesign/designsystem/issues?per_page=100&labels=enhancement';
     return this.http.get<any[]>(url, options);
   }
 
